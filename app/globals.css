@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ring: 0 0% 100%;
+}
+html,
+body {
+  background: #0c0c0d;
+  color: #ededef;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 md:px-12;
+}
+.max-w-screen {
+  max-width: 1200px;
+}
+
+.card {
+  @apply bg-surface/90 rounded-2xl border border-white/5 shadow-card backdrop-blur;
+}
+
+.h1 {
+  @apply text-5xl sm:text-6xl md:text-7xl font-extrabold leading-[0.95];
+}
+.h2 {
+  @apply text-3xl sm:text-4xl md:text-5xl font-extrabold;
+}
+.p {
+  @apply text-subt leading-relaxed;
+}
+.button {
+  @apply inline-flex items-center gap-2 rounded-full px-6 py-3 bg-white text-black font-semibold hover:bg-[#EDEDEF];
+}
+
+.accent {
+  color: theme("colors.accent");
+}
